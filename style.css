@@ -1,0 +1,92 @@
+*{
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header{
+    width: 100vw;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(125, 240, 240);
+}
+.body{
+    background-color:blue;
+    width: 100vw;
+    height: 93vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    align-items: center;  
+}
+.body .role .title{
+    font-size: 1.5rem;
+    color: aqua;
+    font-weight: bold;
+}
+
+.body > .role > p{
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    margin-top: 0.4rem;
+}
+.body .role .start{
+    padding: 0 0.5rem;
+    background-image: url('images/images/star.svg'), url('images/images/star.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: left center, right center;
+}
+.body .door{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0.5rem 0;
+}
+.body .door img{
+    cursor: pointer;
+    transition: all 0.5s ;
+}
+/* .body .door img:hover{
+    transform: rotateX(0) rotateY(50deg);;
+} */
+.body button.start{
+    width: 10vw;
+    height: 7vh;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: coral;
+    color: white;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+.body button.start:active{
+    transform: scale(0.98);
+    outline: none; 
+ }
+.body .pointLocal{
+    display: flex;
+    width: 100vw;
+    justify-content:space-evenly;
+}
+.body .pointLocal > .point{
+    width: 10vw;
+    display: flex;flex-direction: column;
+    justify-content: center;align-items: center;
+}
+.body .pointLocal > .point span{
+    color: white;
+    font-weight: bold;
+}
+.body .pointLocal > .point > div{
+    background-color: aqua;
+    width: 5rem;
+    height: 5rem;
+    color: white;
+    display: flex;justify-content: center;align-items: center;
+    font-size: 2rem;
+}

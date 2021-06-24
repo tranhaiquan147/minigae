@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Game</title>
+</head>
+<body>
+    <div class="header">
+        <img src="images/images/logo.svg">
+    </div>
+    <div class="body">
+        <div class="role">
+            <center><span class="title start">Instructions</span></center>
+            <p><span class="title">1</span> Hiding behind one of these doors is the ChoreBot. </p>
+            <p><span class="title">2</span> Your mission is to open all of the doors without running into thhe ChoreBot.</p>
+            <p><span class="title">3</span> If you manage to avoid the ChoreBot until the very last door,YOU WIN!.</p>
+            <p><span class="title">4</span> See if you can score a winning streak!.</p>
+        </div>
+        <!--  -->
+        <div class="door">
+           <img class="rotage" src="images/images/closed_door.svg" alt="">
+           <img class="rotage" src="images/images/closed_door.svg" alt="">
+           <img class="rotage" src="images/images/closed_door.svg" alt="">
+        </div>
+        <button class="start">Start</button>
+        <div class="pointLocal">
+            <div class="point">
+                <span>Current streak</span>
+                <div id="current"></div>
+            </div>
+            <div class="point">
+                <span>Best streak</span>
+                <div id="streak"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
